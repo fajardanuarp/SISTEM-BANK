@@ -1,0 +1,233 @@
+????????????????????????????????????????????
+?   SOAL 1: CLASS & OBJECT                ?
+????????????????????????????????????????????
+==============================
+Nama Pemilik    : Budi Santoso
+Nomor Rekening  : RK-001
+Saldo           : Rp 500.000
+==============================
+Setoran tunai Rp 200.000 berhasil. Saldo: Rp 700.000
+Penarikan Rp 100.000 berhasil. Saldo: Rp 600.000
+Saldo tidak cukup! Saldo saat ini: Rp 600.000
+==============================
+Nama Pemilik    : Budi Santoso
+Nomor Rekening  : RK-001
+Saldo           : Rp 600.000
+==============================
+
+????????????????????????????????????????????
+?   SOAL 2: INHERITANCE & OVERRIDING      ?
+????????????????????????????????????????????
+====== REKENING TABUNGAN ======
+Nama Pemilik    : Siti Rahayu
+Nomor Rekening  : TB-001
+Saldo           : Rp 10.000.000
+Bunga Tahunan   : 6.0%
+==============================
+Setoran tunai Rp 2.000.000 berhasil. Saldo: Rp 12.000.000
+Penarikan Rp 500.000 berhasil. Saldo: Rp 11.500.000
+Bunga untuk 3 bulan: Rp 172.500,00
+====== REKENING TABUNGAN ======
+Nama Pemilik    : Siti Rahayu
+Nomor Rekening  : TB-001
+Saldo           : Rp 11.500.000
+Bunga Tahunan   : 6.0%
+==============================
+====== REKENING GIRO ======
+Nama Pemilik    : Andi Wijaya
+Nomor Rekening  : GR-001
+Saldo           : Rp 5.000.000
+Limit Penarikan : Rp 3.000.000
+===========================
+Penarikan giro Rp 7.000.000 berhasil. Saldo: Rp -2.000.000
+Melebihi limit giro! Limit: Rp 3.000.000 | Saldo saat ini: Rp -2.000.000
+====== REKENING GIRO ======
+Nama Pemilik    : Andi Wijaya
+Nomor Rekening  : GR-001
+Saldo           : Rp -2.000.000
+Limit Penarikan : Rp 3.000.000
+===========================
+
+????????????????????????????????????????????
+?   SOAL 3: OVERLOADING                   ?
+????????????????????????????????????????????
+-- Setor tunai biasa --
+Setoran tunai Rp 500.000 berhasil. Saldo: Rp 1.500.000
+-- Setor via transfer (ada biaya admin Rp 2.500) --
+Transfer masuk Rp 1.000.000 (biaya admin Rp 2.500). Saldo: Rp 2.497.500
+====== REKENING TABUNGAN ======
+Nama Pemilik    : Dewi Lestari
+Nomor Rekening  : TB-002
+Saldo           : Rp 2.497.500
+Bunga Tahunan   : 5.0%
+==============================
+
+????????????????????????????????????????????
+?   SOAL 4: POLIMORFISME   DEPOSITO       ?
+????????????????????????????????????????????
+====== REKENING DEPOSITO ======
+Nama Pemilik      : Rudi Hartono
+Nomor Rekening    : DP-001
+Saldo             : Rp 20.000.000
+Jangka Waktu      : 12 bulan
+Suku Bunga        : 0.5% per bulan
+Status Jatuh Tempo: Belum
+===============================
+Bunga deposito untuk 12 bulan: Rp 1.200.000,00
+
+-- Penarikan SEBELUM jatuh tempo (kena denda 10%) --
+PERINGATAN: Penarikan sebelum jatuh tempo!
+Denda 10% dari saldo: Rp 2.000.000,00
+Penarikan deposito Rp 5.000.000 berhasil. Saldo: Rp 13.000.000
+====== REKENING DEPOSITO ======
+Nama Pemilik      : Rudi Hartono
+Nomor Rekening    : DP-001
+Saldo             : Rp 13.000.000
+Jangka Waktu      : 12 bulan
+Suku Bunga        : 0.5% per bulan
+Status Jatuh Tempo: Belum
+===============================
+Bunga deposito untuk 6 bulan: Rp 540.000,00
+Status deposito: sudah jatuh tempo.
+Penarikan deposito Rp 5.000.000 berhasil. Saldo: Rp 10.000.000
+====== REKENING DEPOSITO ======
+Nama Pemilik      : Maya Putri
+Nomor Rekening    : DP-002
+Saldo             : Rp 10.000.000
+Jangka Waktu      : 6 bulan
+Suku Bunga        : 0.6% per bulan
+Status Jatuh Tempo: Sudah
+===============================
+
+????????????????????????????????????????????
+?   SOAL 5: ARRAYLIST   SEMUA REKENING    ?
+????????????????????????????????????????????
+
+-- Daftar Semua Rekening --
+====== REKENING TABUNGAN ======
+Nama Pemilik    : Siti Rahayu
+Nomor Rekening  : TB-001
+Saldo           : Rp 11.500.000
+Bunga Tahunan   : 6.0%
+==============================
+====== REKENING TABUNGAN ======
+Nama Pemilik    : Dewi Lestari
+Nomor Rekening  : TB-002
+Saldo           : Rp 2.497.500
+Bunga Tahunan   : 5.0%
+==============================
+====== REKENING GIRO ======
+Nama Pemilik    : Andi Wijaya
+Nomor Rekening  : GR-001
+Saldo           : Rp -2.000.000
+Limit Penarikan : Rp 3.000.000
+===========================
+====== REKENING DEPOSITO ======
+Nama Pemilik      : Rudi Hartono
+Nomor Rekening    : DP-001
+Saldo             : Rp 13.000.000
+Jangka Waktu      : 12 bulan
+Suku Bunga        : 0.5% per bulan
+Status Jatuh Tempo: Belum
+===============================
+====== REKENING DEPOSITO ======
+Nama Pemilik      : Maya Putri
+Nomor Rekening    : DP-002
+Saldo             : Rp 10.000.000
+Jangka Waktu      : 6 bulan
+Suku Bunga        : 0.6% per bulan
+Status Jatuh Tempo: Sudah
+===============================
+>> Saldo TERTINGGI: Rudi Hartono | Rp 13.000.000
+>> Saldo TERENDAH : Andi Wijaya | Rp -2.000.000
+
+????????????????????????????????????????????
+?   OPSIONAL 1: TRANSFER ANTAR REKENING   ?
+????????????????????????????????????????????
+
+--- Transfer dari Siti Rahayu ke Andi Wijaya ---
+Penarikan Rp 1.000.000 berhasil. Saldo: Rp 10.500.000
+Setoran tunai Rp 1.000.000 berhasil. Saldo: Rp -1.000.000
+Transfer Rp 1.000.000 selesai.
+
+
+--- Transfer dari Andi Wijaya ke Dewi Lestari ---
+Penarikan giro Rp 505.000 berhasil. Saldo: Rp -1.505.000
+Biaya administrasi Giro ke Tabungan: Rp 5.000 dipotong.
+Setoran tunai Rp 500.000 berhasil. Saldo: Rp 2.997.500
+Transfer Rp 500.000 selesai.
+
+
+????????????????????????????????????????????
+?   OPSIONAL 2: SIMULASI BUNGA BULANAN    ?
+????????????????????????????????????????????
+
+===== SIMULASI BUNGA BULANAN (1 BULAN) =====
+Bunga untuk 1 bulan: Rp 52.500,00
+Setoran tunai Rp 52.500 berhasil. Saldo: Rp 10.552.500
+Bunga ditambahkan ke Siti Rahayu | Saldo baru: Rp 10.552.500
+Bunga untuk 1 bulan: Rp 12.489,58
+Setoran tunai Rp 12.490 berhasil. Saldo: Rp 3.009.990
+Bunga ditambahkan ke Dewi Lestari | Saldo baru: Rp 3.009.990
+Bunga deposito untuk 12 bulan: Rp 780.000,00
+Setoran tunai Rp 780.000 berhasil. Saldo: Rp 13.780.000
+Bunga ditambahkan ke Rudi Hartono | Saldo baru: Rp 13.780.000
+Bunga deposito untuk 6 bulan: Rp 360.000,00
+Setoran tunai Rp 360.000 berhasil. Saldo: Rp 10.360.000
+Bunga ditambahkan ke Maya Putri | Saldo baru: Rp 10.360.000
+====================================================
+
+
+????????????????????????????????????????????
+?   OPSIONAL 3: LAPORAN TRANSAKSI         ?
+????????????????????????????????????????????
+
+===== LAPORAN TRANSAKSI =====
+Rekening: TB-001 (Siti Rahayu)
+  [BUKA] Rekening dibuka dengan saldo awal: Rp 10.000.000
+  [SETOR] Rp 2.000.000 | Saldo: Rp 12.000.000
+  [TARIK] Rp 500.000 | Saldo: Rp 11.500.000
+  [TARIK] Rp 1.000.000 | Saldo: Rp 10.500.000
+  [SETOR] Rp 52.500 | Saldo: Rp 10.552.500
+=============================
+
+
+===== LAPORAN TRANSAKSI =====
+Rekening: TB-002 (Dewi Lestari)
+  [BUKA] Rekening dibuka dengan saldo awal: Rp 1.000.000
+  [SETOR] Rp 500.000 | Saldo: Rp 1.500.000
+  [TRANSFER MASUK] Rp 1.000.000 | Biaya Admin: Rp 2.500 | Saldo: Rp 2.497.500
+  [SETOR] Rp 500.000 | Saldo: Rp 2.997.500
+  [SETOR] Rp 12.490 | Saldo: Rp 3.009.990
+=============================
+
+
+===== LAPORAN TRANSAKSI =====
+Rekening: GR-001 (Andi Wijaya)
+  [BUKA] Rekening dibuka dengan saldo awal: Rp 5.000.000
+  [TARIK GIRO] Rp 7.000.000 | Saldo: Rp -2.000.000
+  [SETOR] Rp 1.000.000 | Saldo: Rp -1.000.000
+  [TARIK GIRO] Rp 505.000 | Saldo: Rp -1.505.000
+=============================
+
+
+===== LAPORAN TRANSAKSI =====
+Rekening: DP-001 (Rudi Hartono)
+  [BUKA] Rekening dibuka dengan saldo awal: Rp 20.000.000
+  [DENDA] Rp 2.000.000,00 | Saldo setelah denda: Rp 18.000.000
+  [TARIK DEPOSITO] Rp 5.000.000 | Saldo: Rp 13.000.000
+  [SETOR] Rp 780.000 | Saldo: Rp 13.780.000
+=============================
+
+
+===== LAPORAN TRANSAKSI =====
+Rekening: DP-002 (Maya Putri)
+  [BUKA] Rekening dibuka dengan saldo awal: Rp 15.000.000
+  [TARIK DEPOSITO] Rp 5.000.000 | Saldo: Rp 10.000.000
+  [SETOR] Rp 360.000 | Saldo: Rp 10.360.000
+=============================
+
+????????????????????????????????????????????
+?   PROGRAM SELESAI                       ?
+????????????????????????????????????????????
+BUILD SUCCESSFUL (total time: 0 seconds)
